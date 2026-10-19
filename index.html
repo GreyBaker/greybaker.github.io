@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Greyson Baker Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Greyson Baker is a UT Austin computer science master's student seeking software engineering opportunities, with experience in developer infrastructure, full-stack applications, and efficient AI systems.">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+      body {
+        font: normal 90%/1.45 Cambria, "Avenir Next", Times, serif;
+        color: #292d32;
+      }
+      a:link {
+        color: #7938a3;
+      }
+      a:visited {
+        color: #57068c;
+      }
+      a:focus-visible {
+        outline: 2px solid #7938a3;
+        outline-offset: 4px;
+      }
+      .navbar .navbar-brand,
+      .navbar .nav-link {
+        color: #f3f3f3;
+      }
+      .navbar .nav-link:hover,
+      .navbar .nav-link:focus {
+        color: #fff;
+        text-decoration: underline;
+      }
+      .navbar-nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.15rem 1.25rem;
+      }
+      .skip-link {
+        position: absolute;
+        left: 1rem;
+        top: -5rem;
+        z-index: 10;
+        padding: 0.5rem 1rem;
+        background: #fff;
+      }
+      .skip-link:focus {
+        top: 0.5rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+      h3, h4 {
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+      }
+      .section-subheading {
+        font-size: 1.1rem;
+        margin: 1.75rem 0 1rem;
+      }
+      section {
+        margin: 3rem 0;
+      }
+      article {
+        margin-bottom: 1.5rem;
+      }
+      article p:last-child,
+      article ul:last-child {
+        margin-bottom: 0;
+      }
+      .profile-photo {
+        float: right;
+        width: 150px;
+        height: 200px;
+        margin: 0 0 1rem 2rem;
+        object-fit: cover;
+      }
+      .intro-label,
+      .entry-meta {
+        color: #595d62;
+      }
+      .intro-label {
+        font-size: 1rem;
+      }
+      .entry-meta {
+        font-size: 0.9em;
+        margin-bottom: 0.5rem;
+      }
+      .contact-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.4rem 1.25rem;
+      }
+      footer {
+        border-top: 1px solid #dee2e6;
+        padding: 1.25rem 0 2rem;
+      }
+      @media (max-width: 575.98px) {
+        .navbar {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+        .navbar-nav {
+          gap: 0.1rem 1rem;
+        }
+        .profile-photo {
+          width: 105px;
+          height: 140px;
+          margin-left: 1rem;
+        }
+        section {
+          margin: 2.25rem 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark" aria-label="Main navigation">
+      <a class="navbar-brand" href="#bio">Greyson Baker</a>
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#research">Research</a></li>
+        <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      </ul>
+    </nav>
+    <main id="main" class="container" tabindex="-1">
+      <section id="bio" class="clearfix" aria-labelledby="name">
+        <img src="photo.jpeg" class="img-thumbnail profile-photo" width="150" height="200" alt="Greyson Baker">
+        <h1 id="name">Greyson Baker</h1>
+        <p class="intro-label">Master's Student in Computer Science, University of Texas at Austin<br>
+          Aspiring Software Developer</p>
+        <p><a href="mailto:akagbaker@utexas.edu">akagbaker@utexas.edu</a></p>
+        <div class="contact-links" aria-label="Contact and professional profiles">
+          <a href="resume.pdf">Resume</a>
+          <a href="https://github.com/GreyBaker">GitHub</a>
+          <a href="https://www.linkedin.com/in/greyson-baker/">LinkedIn</a>
+        </div>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading">Professional Experience</h2>
+        <article>
+          <h3>Software Developer Intern; IBM HashiCorp</h3>
+          <p class="entry-meta">May - August 2026 &middot; Austin, TX</p>
+          <p>Led a team of three developers building tools to generate public documentation for HCP Terraform and Terraform Enterprise. The work included reusable components and CI integration to keep documentation generation part of the development process.</p>
+          <p>Integrated an OpenAPI-based code generator into an existing application and identified generator defects through integration testing. Developed agentic AI workflows to support development and maintenance across engineering teams.</p>
+        </article>
+        <article>
+          <h3>Head Teaching Assistant; UT Austin Computer Science</h3>
+          <p class="entry-meta">August 2023 - Present &middot; Austin, TX</p>
+          <p>Lead a team of more than 13 teaching assistants for a core CS course with over 600 students each semester. Responsibilities include coordinating grading and office hours, reviewing course materials, and improving instruction.</p>
+          <p>Built a Python testing framework with Docker to run student code consistently across different systems, reducing grading time by 40%. Analysis of student performance data informed instructional changes that contributed to a 10% increase in passing rates in evaluated sections.</p>
+        </article>
+        <article>
+          <h3>Software Engineering Intern; A.D. Immigration Law</h3>
+          <p class="entry-meta">May - July 2025 &middot; Dallas, TX</p>
+          <p>Built an internal application using Python, React, and SQL for client evaluation and case tracking. The application consolidated cost-benefit analysis and case information, reducing assessment time by approximately 15% and improving consistency across evaluations.</p>
+        </article>
+        <article>
+          <h3>Machine Learning Research Intern; UTCS Labs</h3>
+          <p class="entry-meta">September 2024 - January 2025 &middot; Austin, TX</p>
+          <p>Researched methods to reduce LLM inference costs while preserving answer quality. Developed and evaluated an online-learning algorithm that selected between GPT-4 and smaller distilled models. On a custom image question-answering benchmark, the approach reduced inference costs by up to 90% while retaining more than 99% of baseline accuracy.</p>
+          <p>Designed image question-answering tasks and a code-generation benchmark using COCO images to compare model accuracy and efficiency.</p>
+        </article>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Selected Software &amp; AI Projects</h2>
+        <article>
+          <h3>chor.io; Choreography Design Platform</h3>
+          <p class="entry-meta">Python &middot; React &middot; Human-Computer Interaction</p>
+          <p>A choreography planning and review platform used by more than five performance groups. A synchronized music and movement timeline helps performers coordinate formations and review routines. User research guided the interface design, with a focus on usability and accessibility.</p>
+          <p><a href="https://github.com/GreyBaker/chor.io">Source code on GitHub</a></p>
+        </article>
+        <article>
+          <h3>Lockup; Reinforcement Learning Card Game</h3>
+          <p class="entry-meta">Python &middot; PyTorch &middot; Ray RLlib</p>
+          <p>A custom card-game environment for reinforcement learning experiments, with interactive interfaces and agents trained using PyTorch and RLlib. Agents with different strategic objectives provide a setting for studying adversarial training and adaptation to changing opponents.</p>
+        </article>
+        <article>
+          <h3>Driving Safety App</h3>
+          <p class="entry-meta">Swift &middot; Python &middot; Computer Vision &middot; Firebase</p>
+          <p>An iOS driver-assistance prototype that uses camera input and object detection to identify potential roadway hazards and alert the driver. The app runs ML inference on the phone and connects to Firebase for updates and monitoring.</p>
+        </article>
+        <article>
+          <h3>Volunteer Management Automation</h3>
+          <p class="entry-meta">Java &middot; JavaFX &middot; SQL &middot; Google Cloud</p>
+          <p>A desktop application developed with a local volunteering chapter serving more than 200 volunteers. The application manages hour submissions, verification, reporting, and automated emails, with cloud-backed record storage.</p>
+        </article>
+      </section>
+
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research &amp; Technical Papers</h2>
+        <p>Research focused on the relationship between algorithm design and practical performance. Projects include experiments in robotics, caching, and AI, along with surveys of algorithms and distributed systems.</p>
+        <h3 class="section-subheading">Completed Work</h3>
+        <article>
+          <h4>Video Demonstration-Guided Learning of Earthmoving Actions for Robotic Excavators</h4>
+          <p class="entry-meta">Robotics &middot; Computer Vision &middot; PyTorch &middot; Newton Physics Simulator</p>
+          <p>Investigated the use of low-quality video to train robotic excavators. The approach extracts motion from video, learns an initial policy through imitation, and refines it with reinforcement learning in a soil simulator. The study compares model architectures and examines limitations in video-derived training data and simulated soil interactions.</p>
+          <p><a href="projects/video_demonstration-guided_learning_of_earthmoving_actions_for_robotic_excavators.pdf">Technical paper (PDF)</a></p>
+        </article>
+        <article>
+          <h4>Learning-Augmented Algorithms in Real-World Caching</h4>
+          <p class="entry-meta">Caching &middot; Online Learning &middot; Systems Performance &middot; Empirical Study</p>
+          <p>Evaluated learning-augmented caching algorithms on real access traces against LRU, FIFO, and an optimal offline baseline. The study examines how prediction errors, cache size, and sampling affect cache miss rates and throughput, including the computational cost of prediction-guided decisions.</p>
+          <p><a href="projects/learning-augmented_algorithms_in_real-world_caching.pdf">Technical paper (PDF)</a></p>
+        </article>
+        <article>
+          <h4>Learning-Augmented Online Algorithms</h4>
+          <p class="entry-meta">Algorithms &middot; Theoretical Computer Science &middot; Survey</p>
+          <p>A co-authored survey of how predictions can improve online decisions before all input is available. Topics include ski rental, set cover, facility location, bipartite matching, and metrical task systems, with a focus on balancing the benefits of accurate predictions against guarantees when predictions are wrong.</p>
+          <p><a href="projects/learning-augmented_online_algorithms.pdf">Survey (PDF)</a></p>
+        </article>
+        <article>
+          <h4>Group Membership in LLM Training Systems</h4>
+          <p class="entry-meta">Distributed Systems &middot; Fault Tolerance &middot; ML Infrastructure &middot; Survey</p>
+          <p>A co-authored survey of how distributed LLM training systems manage workers as machines fail, join, or leave. The paper connects classical membership protocols with modern approaches to failure detection, resource allocation, elastic training, and communication between workers.</p>
+          <p><a href="projects/group_membership_in_llm_training_systems.pdf">Survey (PDF)</a></p>
+        </article>
+        <article>
+          <h4>Adaptive LLM Routing &amp; Multimodal Benchmarking</h4>
+          <p class="entry-meta">UTCS Labs &middot; Online Learning &middot; Inference Optimization &middot; Model Evaluation</p>
+          <p>Research conducted during the UTCS Labs internship described above. The work examines when smaller models can replace more expensive ones, using custom image question-answering tasks and a COCO-based code-generation benchmark to evaluate cost and accuracy.</p>
+        </article>
+        <h3 class="section-subheading">In Progress</h3>
+        <ul>
+          <li><strong>An Empirical Study of Flaky Tests in Go.</strong> Repeatable experiments investigating tests that fail nondeterministically, with a focus on the causes and behavior of those failures.</li>
+          <li><strong>Vector Database Indexing.</strong> Implementation and evaluation of a LindormVector-inspired approach to reproduce published results and compare search accuracy, query latency, indexing cost, and resource use.</li>
+          <li><strong>Limitations of LLM Distillation.</strong> Comparisons of larger models and their smaller distilled counterparts to identify which capabilities are preserved and which are lost.</li>
+        </ul>
+      </section>
+
+      <section id="education" aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <h3>The University of Texas at Austin</h3>
+        <p>M.S. in Computer Science; expected May 2027<br>
+          Integrated B.S./M.S. Computer Science program<br>
+          Graduate GPA: 3.92 &middot; Certificates and minors: Business, Spanish</p>
+      </section>
+
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">Miscellaneous</h2>
+        <p>When I'm not working, you might find me at a dance hall or on a volleyball court.</p>
+      </section>
+    </main>
+  </body>
+</html>
